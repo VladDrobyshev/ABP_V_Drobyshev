@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main() {
     cout << "LAB_1 " << "V_9 Drobyshev Vlad ""\n""\n";
     cout << "Enter 1 to start""\n""Enter 0 to exit""\n";
