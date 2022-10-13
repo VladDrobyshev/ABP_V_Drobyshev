@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-int main() {
+int lab_22() {
     cout << "LAB_1 " << "V_9 Drobyshev Vlad ""\n""\n";
     cout << "Enter 1 to start""\n""Enter 0 to exit""\n";
     cout << "Your choice=";
@@ -34,6 +33,8 @@ int main() {
             l = x * x + y * y;
 
 
+
+
             if ((x >= 0 && y >= 0) || (x <= 0 && y >= 0) || (x >= 0 && y <= 0)) {
                 if (l <= 1) {
                     cout << "Yes, the point belongs to the figure";
@@ -46,9 +47,12 @@ int main() {
             }
 
 
+
+
+
         turn1:
-            cout << "\n" "\n" "To repeat the program, press 1" << endl;
-            cout << "To end the program, press 0" << endl;
+            cout << "\n" "\n" "To repeat the program, press 1"<<endl;
+            cout <<"To end the program, press 0"<<endl;
             int p;
             cin >> p;
             switch (p) {
@@ -60,7 +64,7 @@ int main() {
                     goto turn;
 
                 default:
-                    cout << "Error, you entered an invalid value";
+                    cout<<"Error, you entered an invalid value";
                     goto turn1;
 
             }
