@@ -9,8 +9,8 @@ int main() {
     cout << "Which project do you want to choose?"<<endl<<endl;
     cout<<"////////////////////////////////////"<<endl<<endl;
     cout << "Choose 1 to start Lab 1"<<endl;
-    cout << "Choose 2 to start Lab 2.1"<<endl;
-    cout << "Choose 3 to start Lab 2.2"<<endl;
+    cout << "Choose 21 to start Lab 2.1"<<endl;
+    cout << "Choose 22 to start Lab 2.2"<<endl;
     cout << "Press 0 to exit"<<endl;
 
 
@@ -25,11 +25,11 @@ int main() {
             lab_1();
             break;
 
-        case 2:
+        case 21:
             lab_21();
             break;
 
-        case 3:
+        case 22:
             lab_22();
             break;
 
