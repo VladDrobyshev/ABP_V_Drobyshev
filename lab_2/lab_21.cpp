@@ -16,13 +16,26 @@ int lab_21() {
     sum = 0;
 
     turn:
-    while (n <= 9 || (fabs(term) < eps && term != 0)) {
+    while (true) {
         term = (k1 * ((n + 1) / (pow(2, n - 1))));
+        if(abs(term)<eps && term !=0){
+            cout<<"sum="<<sum<<endl;
+            break;
+        }
+        if(n==9){
+            cout << "sum ten=" <<sum<<endl;
+
+
+        }
         sum = sum + term;
+
         n++;
 
+
+
     }
-    cout << "sum=" <<sum<<endl<<"///////////"<<endl;
+
+
 
     cout << "END";
 }
