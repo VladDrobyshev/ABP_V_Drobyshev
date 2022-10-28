@@ -1,72 +1,41 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
-int lab_22() {
-    cout << "LAB_1 " << "V_9 Drobyshev Vlad ""\n""\n";
-    cout << "Enter 1 to start""\n""Enter 0 to exit""\n";
-    cout << "Your choice=";
-    int a;
-    cin >> a;
+int lab_22(){
+    system("chcp 65001");
 
+    string n1,n2,n3,n4,m1,m2,m3,m4,b1,b2,b3,b4;
 
-    switch (a) {
-        default:
-            cout << "Error, you entered an invalid value""\n""Please try again";
-            break;
+    cout<<"1. Введіть: найменування,виробника, кількість пакетів, вартість >";
+    cin>>n1>>n2>>n3>>n4;
+    cout<<"2. Введіть: найменування,виробника, кількість пакетів, вартість >";
+    cin>>m1>>m2>>m3>>m4;
+    cout<<"3. Введіть: найменування,виробника, кількість пакетів, вартість >";
+    cin>>b1>>b2>>b3>>b4;
+    cout<<"|----------------------------------------------------|\n";
+    cout<<"|Офісні пакети                                       |\n";
+    cout<<"|----------------------------------------------------|\n";
+    cout<<"| Найменування   | Виробник | Кількість  | Вартість  |\n";
+    cout<<"|                |          | пакетів    |    ($)    |\n";
+    cout<<"|----------------|----------|------------|-----------|\n";
+    cout<<"|"<<n1<<"          |"<<n2<<" |"<<n3<<"           |"<<n4<<"        |\n";
+    cout<<"|"<<m1<<"       |"<<m2<<"     |"<<m3<<"           |"<<m4<<"       |\n";
+    cout<<"|"<<b1<<"      |"<<b2<<"       |"<<b3<<"           |"<<b4<<"          |\n";
+    cout<<"|----------------------------------------------------|\n";
+    cout<<"|Примітка: можна безкоштовно отримати                |\n";
+    cout<<"|продукт StarOffice через Internet                   |\n";
+    cout<<"|----------------------------------------------------|\n";
 
-
-        case 0:
-            cout << "Exit the program...";
-            break;
-
-        case 1:
-            cout << "\n""This program enters the coordinates ""\n""of a point (x, y) and determines whether" << endl;
-            cout << "the point falls within the shaded area in the figure." << endl;
-            cout << "\n""____Start____" << endl;
-            double x, y, l;
-
-        turn:
-
-            cout << "Enter _x_ and _y_=" << endl;
-            cin >> x;
-            cin >> y;
-            l = x * x + y * y;
-
-
-
-
-            if ((x >= 0 && y >= 0) || (x <= 0 && y >= 0) || (x >= 0 && y <= 0)) {
-                if (l <= 1) {
-                    cout << "Yes, the point belongs to the figure";
-                } else {
-                    cout << "No, the point does not belong to the shape";
-                }
-
-            } else {
-                cout << "No, the point does not belong to the shape";
-            }
+/*
+Office Microsoft 4 870
+SmartSute Lotus 5 1020
+StarOffice Sun 4 9
+ */
 
 
 
-
-
-        turn1:
-            cout << "\n" "\n" "To repeat the program, press 1"<<endl;
-            cout <<"To end the program, press 0"<<endl;
-            int p;
-            cin >> p;
-            switch (p) {
-                case 0:
-                    cout << "END";
-                    break;
-
-                case 1:
-                    goto turn;
-
-                default:
-                    cout<<"Error, you entered an invalid value";
-                    goto turn1;
-
-            }
-    }
+    return 0;
 }
+
+
