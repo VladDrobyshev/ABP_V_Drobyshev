@@ -2,16 +2,19 @@
 #include "V:\ABP\lab_1\lab_1.cpp"
 #include "V:\ABP\lab_2\lab_21.cpp"
 #include "V:\ABP\lab_2\lab_22.cpp"
+#include "V:\ABP\lab_3\lab_3.cpp"
 using namespace std;
 
 int main() {
+    system("chcp 65001");
     start:
-    cout << "Which project do you want to choose?"<<endl<<endl;
-    cout<<"////////////////////////////////////"<<endl<<endl;
-    cout << "Choose 1 to start Lab 1"<<endl;
-    cout << "Choose 21 to start Lab 2.1"<<endl;
-    cout << "Choose 22 to start Lab 2.2"<<endl;
-    cout << "Press 0 to exit"<<endl;
+    cout << "\n""\n""Який проєкт ви хочете обрати?"<<endl<<endl;
+    cout<<"-----------------------------------"<<endl<<endl;
+    cout << "Введіть 1, щоб почати Lab_1"<<endl;
+    cout << "Введіть 21, щоб почати Lab_2.1"<<endl;
+    cout << "Введіть 22, щоб почати Lab_2.2"<<endl;
+    cout << "Введіть 3, щоб почати Lab_3"<<endl;
+    cout << "Нажміть 0, щоб вийти"<<endl;
 
 
     int (q);
@@ -31,6 +34,9 @@ int main() {
 
         case 22:
             lab_22();
+            break;
+        case 3:
+            lab_3();
             break;
 
         default:
