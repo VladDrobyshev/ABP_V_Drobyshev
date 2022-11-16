@@ -4,7 +4,7 @@ using namespace std;
 
 int lab_5(){
     system("chcp 65001");
-
+    srand(time(0));
     cout << "LAB_5 " << "Варіант 9 Дробишев Влад ""\n";
     Sleep(200);
     cout << "\n""Ця програма оголосить масив та""\n""заповнить його випадковими значеннями" << endl;
@@ -20,53 +20,57 @@ int lab_5(){
     cout << "Масив з випадковими цифрами=" << endl<<endl;
     int array[g];
 
-    srand(time(0));
     for(int i=0;i<g;++i){
-        array[i]= -50+rand() % 101;;
+        array[i]= -50+rand() % 101;
     }
+    array[g]=1;
     for(int i=0;i<g;++i){
         cout<<array[i]<<" ";
     }
-    Sleep(300);
+
 
 
     cout <<endl<<endl<< "Змінений масив"<<endl<<endl;
 
-    int o=0, in,out;
-    for(int i=0;i<g;i++){
-        int k=0,e=0;
+    int o=0;
+    for(int i=0;i<=g;i++){
         if(array[i]<0){
             o++;
         }
-        else if(array[i]>=0 && o>1){
-            out=i-1;
-            in=i-o;
-            int max=array[i];
-            int min=array[i];
-            for(int q=in;q<=out;q++){
-                if(array[q]>max){
-                    max=array[q];
-                    k=q;
-                }
-                else if(array[q]<min){
-                    min=array[q];
-                    e=q;
-                }
+        else if(array[i]>=0){
 
-            }
-            array[e]=max;
-            array[k]=min;
+            if(o>1){
+                int start,end,max,min,nmax,nmin;
+                start=i-o;
+                end=i-1;
+                max=array[start];
+                min=array[start];
+                nmax=start;
+                nmin=start;
+                for(int l=start;l<end+1;l++){
+                    if(array[l]>=max){
+                        max=array[l];
+                        nmax=l;
+                    }
+                    else if(array[l]<=min){
+                        min=array[l];
+                        nmin=l;
+                    }
+                    else{
+                        break;
+                    }
+
+
+                }
+            array[nmax]=min;
+            array[nmin]=max;
             o=0;
-        }
+            }
         else{
             o=0;
         }
 
-
-
-
-
-
+        }
     }
 
 
