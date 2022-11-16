@@ -4,6 +4,7 @@
 #include "V:\ABP\lab_2\lab_22.cpp"
 #include "V:\ABP\lab_3\lab_3.cpp"
 #include "V:\ABP\lab_4\lab_4.cpp"
+#include "V:\ABP\lab_5\lab_5.cpp"
 using namespace std;
 
 int main() {
@@ -16,6 +17,7 @@ int main() {
     cout << "Введіть 22, щоб почати Lab_2.2"<<endl;
     cout << "Введіть 3, щоб почати Lab_3"<<endl;
     cout << "Введіть 4, щоб почати Lab_4"<<endl;
+    cout << "Введіть 5, щоб почати Lab_5"<<endl;
     cout << "Нажміть 0, щоб вийти"<<endl;
 
 
@@ -42,6 +44,9 @@ int main() {
             break;
         case 4:
             lab_4();
+            break;
+        case 5:
+            lab_5();
             break;
 
         default:
