@@ -5,6 +5,8 @@
 #include "V:\ABP\lab_3\lab_3.cpp"
 #include "V:\ABP\lab_4\lab_4.cpp"
 #include "V:\ABP\lab_5\lab_5.cpp"
+#include "V:\ABP\lab_6\lab_6.cpp"
+#include "V:\ABP\lab_7\lab_7.cpp"
 using namespace std;
 
 int main() {
@@ -18,6 +20,8 @@ int main() {
     cout << "Введіть 3, щоб почати Lab_3"<<endl;
     cout << "Введіть 4, щоб почати Lab_4"<<endl;
     cout << "Введіть 5, щоб почати Lab_5"<<endl;
+    cout << "Введіть 6, щоб почати Lab_6"<<endl;
+    cout << "Введіть 7, щоб почати Lab_7"<<endl;
     cout << "Нажміть 0, щоб вийти"<<endl;
 
 
@@ -48,6 +52,12 @@ int main() {
         case 5:
             lab_5();
             break;
+        case 6:
+            lab_6();
+            break;
+        case 7:
+            lab_7();
+            break;
 
         default:
             cout << "Error, you entered an invalid value""\n""Please try again";
@@ -55,3 +65,4 @@ int main() {
 
     }
 }
+
