@@ -7,6 +7,9 @@
 #include "V:\ABP\lab_5\lab_5.cpp"
 #include "V:\ABP\lab_6\lab_6.cpp"
 #include "V:\ABP\lab_7\lab_7.cpp"
+#include "V:\ABP\lab_8\lab_8.cpp"
+#include "V:\ABP\lab_9\lab_9.cpp"
+#include "V:\ABP\develop\develop.cpp"
 using namespace std;
 
 int main() {
@@ -22,7 +25,11 @@ int main() {
     cout << "Введіть 5, щоб почати Lab_5"<<endl;
     cout << "Введіть 6, щоб почати Lab_6"<<endl;
     cout << "Введіть 7, щоб почати Lab_7"<<endl;
+    cout << "Введіть 8, щоб почати Lab_8"<<endl;
+    cout << "Введіть 9, щоб почати Lab_9"<<endl;
+    cout << "Введіть 99, щоб почати develop"<<endl;
     cout << "Нажміть 0, щоб вийти"<<endl;
+
 
 
     int (q);
@@ -58,6 +65,16 @@ int main() {
         case 7:
             lab_7();
             break;
+        case 8:
+            lab_8();
+            break;
+        case 9:
+            lab_9();
+            break;
+        case 99:
+            develop();
+            break;
+
 
         default:
             cout << "Error, you entered an invalid value""\n""Please try again";
