@@ -9,6 +9,7 @@
 #include "V:\ABP\lab_7\lab_7.cpp"
 #include "V:\ABP\lab_8\lab_8.cpp"
 #include "V:\ABP\lab_9\lab_9.cpp"
+#include "V:\ABP\lab_10\lab_10.cpp"
 #include "V:\ABP\develop\develop.cpp"
 using namespace std;
 
@@ -27,6 +28,7 @@ int main() {
     cout << "Введіть 7, щоб почати Lab_7"<<endl;
     cout << "Введіть 8, щоб почати Lab_8"<<endl;
     cout << "Введіть 9, щоб почати Lab_9"<<endl;
+    cout << "Введіть 10, щоб почати Lab_10"<<endl;
     cout << "Введіть 99, щоб почати develop"<<endl;
     cout << "Нажміть 0, щоб вийти"<<endl;
 
@@ -70,6 +72,9 @@ int main() {
             break;
         case 9:
             lab_9();
+            break;
+        case 10:
+            lab_10();
             break;
         case 99:
             develop();
